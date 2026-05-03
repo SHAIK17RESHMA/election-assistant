@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+.agent-img {
+    width: 80%;
+    max-width: 420px;
+    display: block;
+    filter: drop-shadow(0 0 25px rgba(0,200,255,0.6));
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHAT BOX */
+.chat-container {
+    width: 380px;
+    height: 560px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+.chat-container h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CHAT AREA */
+#chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* MESSAGE */
+.message {
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 75%;
+    font-size: 14px;
+}
+
+/* USER */
+.user {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    margin-left: auto;
+}
+
+/* BOT */
+.bot {
+    background: rgba(255,255,255,0.9);
+    color: #333;
+}
+
+/* OPTIONS */
+.options {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.options button {
+    margin: 4px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+}
+
+/* INPUT */
+.input-box {
+    display: flex;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.input-box button {
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #0072ff;
+    color: white;
+}

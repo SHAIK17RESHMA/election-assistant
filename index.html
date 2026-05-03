@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT SIDE IMAGE -->
+    <div class="left-panel">
+        <img src="agent.png" alt="AI Assistant" class="agent-img">
+    </div>
+
+    <!-- RIGHT SIDE CHAT -->
+    <div class="right-panel">
+        <div class="chat-container">
+
+            <h2>🗳 Election Assistant</h2>
+
+            <div id="chat-box"></div>
+
+            <div class="options">
+                <button onclick="quickReply('process')">Process</button>
+                <button onclick="quickReply('timeline')">Timeline</button>
+                <button onclick="quickReply('steps')">Vote Steps</button>
+                <button onclick="quickReply('eligibility')">Eligibility</button>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="userInput" placeholder="Ask about elections..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
